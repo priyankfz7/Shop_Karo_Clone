@@ -9,7 +9,7 @@ function App() {
 
         <div id="first_section" onclick="gotomen()">
           <div className="frist_section_img sameimgsamdiv">
-            <img src="./Images/fiest section.jpg" alt="" />
+            {/* <img  src="https://assetscdn1.paytm.com/images/catalog/view_item/711199/1613028660058.jpg?imwidth=414&impolicy=hq" alt="" /> */}
           </div>
         </div>
         <div id="Second_section" onclick="gotowoen()">
@@ -43,7 +43,7 @@ function App() {
               <img src="./Images/sic the section slider/3.jpg" alt="" />
             </div>
             <div className="silder_no_hover">
-              <img src="./Images/sic the section slider/4.jpg" alt="" />
+              {/* <img src="./Images/sic the section slider/4.jpg" alt="" /> */}
             </div>
             <div className="silder_no_hover">
               <img src="./Images/sic the section slider/5.jpg" alt="" />
@@ -310,7 +310,7 @@ function App() {
             <img src="./Images/lastsection22/7.webp" alt="" />
           </div>
           <div className="section_13_img sameimgsamdiv">
-            <img src="./Images/lastsection22/8.webp" alt="" />
+            <img src="./Images/lastsection22/10.webp" alt="" />
           </div>
           <div className="section_13_img sameimgsamdiv">
             <img src="./Images/lastsection22/9.webp" alt="" />
@@ -322,7 +322,7 @@ function App() {
         <div className="Show_the_space" onclick="gotomen()" />
         <div id="section23" onclick="gotomen()">
           <div className="section23 sameimgsamdiv">
-            <img src="./Images/last img.webp" alt="" />
+            {/* <img src="./Images/last img.webp" alt="" /> */}
           </div>
         </div>
         <div id="icon_div">
