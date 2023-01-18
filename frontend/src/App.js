@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -92,7 +92,7 @@ function App() {
         </div>
         <div className="Show_the_space" onclick="gotomen()" />
         <div className="sameimgsamdiv sameimgheading" onclick="gotowoen()" />
-        <div id="section_11" className="Fous_img_inDiv" onclick="gotomen()">
+        {/* <div id="section_11" className="Fous_img_inDiv" onclick="gotomen()">
           <div className="section_11_img sameimgsamdiv">
             <img src="./Images/11 Section/1.webp" alt="" />
           </div>
@@ -105,7 +105,7 @@ function App() {
           <div className="section_11_img sameimgsamdiv">
             <img src="./Images/11 Section/4.webp" alt="" />
           </div>
-        </div>
+        </div> */}
         <div className="Show_the_space" onclick="gotowoen()" />
         <div className="sameimgsamdiv sameimgheading" onclick="gotowoen()" />
         <div id="section12" onclick="gotowoen()">
