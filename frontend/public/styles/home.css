@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.Show_the_space{
+    margin: 3% 0% 1% 0%;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(51, 51, 51, 0.452);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Nav Bar Section Css end*/
+
+#first_section{
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+
+.sameimgsamdiv > img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s all ease-in-out;
+} 
+
+.sameimgsamdiv:hover > img {
+    transform: scale(1.01);
+    width: 100%;
+    height: 100%;
+}
+
+.sameimgsamdiv{
+    margin-top: 2px;
+}
+
+
+
+
+
+/* First section css */
+
+.frist_section_img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+#Four_section{
+    width: 100%;
+    display: flex;
+    gap: 1px;
+
+}
+
+#Four_section > div{
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.silder_no_hover{
+    cursor: pointer;
+    width: 100%;
+}
+
+.silder_no_hover > img{
+    width: 100%;
+}
+
+.slider_down_img{
+    margin-top: 5px;
+}
+
+
+
+
+/*  11 section  css */
+
+
+/*  11 section css end*/
+
+/* 
+.Fous_img_inDiv{} */
+
+.Fous_img_inDiv{
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    padding-bottom: 2px;
+}
+
+
+.Fous_img_inDiv > div{
+    width: 25%;
+}
+
+
+
+
+
+/*  15 section  css */
+
+#section15{
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+}
+
+#section15 > div{
+    width: 50%;
+}
+
+/*  15 section css end*/
+
+
+.arrowsSilder {
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+.section_21{
+    display: flex;
+    cursor: pointer;
+}
+
+.section_21 > div{
+    width: 40%;
+} 
+
+
+
+
+
+
+ 
+
+#icon_div {
+    
+    font-family: sans-serif;
+    padding: 30px 0;
+    background-color: #FAFAFA;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+#icon_div > .icons > i{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#icon_div > .icons > p{
+    font-size: 20px;
+    font-weight: 700;
+}
