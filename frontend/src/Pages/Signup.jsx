@@ -1,5 +1,9 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import { Input,Button,Box,Text,Flex,Image } from '@chakra-ui/react'
+import logo from '../Components/Logo/mall_logo.png'
+
+
 
 const Signup = () => {
 
@@ -16,7 +20,8 @@ const Signup = () => {
     }
 
     const handleClick=()=>{
-        if(confirm==password){
+        if(payload.name.length>0&&payload.gender.length>0&&payload.age.length>0){
+            if(confirm==password){
                 fetch('http://localhost:8080/users',{
                 method:"POST",
                 body:JSON.stringify(payload),
@@ -30,12 +35,15 @@ const Signup = () => {
             setName('')
             setPassword('')
             setMsg('')
+            setConfirm('')
             }else{
                 alert('Password does not match')   
                 setPassword('')
                 setConfirm('')
             }
-        
+        }else{
+            alert('Fill all the details to proceed')
+        }
     }
 
     const handlePass = (password) => {
@@ -52,23 +60,44 @@ const Signup = () => {
     }
     useEffect(()=>{
         setTimeout(handlePass(password),1000)
-    },[password.length])
+    },[password.length,password])
     
 
     return (
-        <div>
-            <input type="text" placeholder="Enter Full Name" value={name} onChange={(e)=>setName(e.target.value)} />
-            <input type="text" placeholder="Enter Gender" value={gender} onChange={(e)=>setGender(e.target.value)} />
-            <input type="text" placeholder="Enter Age" value={age} onChange={(e)=>setAge(e.target.value)} />
-            <input type="text" placeholder="Enter Email" value={email} onChange={(e)=>setEmail(e.target.value)} />
-            <input type="text" placeholder="Enter Password" value={password} onChange={(e)=>{
-                setPassword(e.target.value)
-                handlePass(password)
-                }} />
-            <div>{msg}</div>
-            <input type="text" placeholder="Confirm Password" value={confirm} onChange={(e)=>setConfirm(e.target.value)} />
-            <button onClick={handleClick}>Register</button>
-        </div>
+        <Box bgColor='purple.50'>
+            <Box>
+                <Flex direction={['column','column','row','row']}>
+                <Box>
+                    <Image m='auto' w={['70%','70%','30%','30%']} src={logo} alt="" />
+                </Box>
+                <Box>
+                    <Flex direction='column'>
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="text" placeholder="Enter Full Name" value={name} onChange={(e)=>setName(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="text" placeholder="Enter Gender" value={gender} onChange={(e)=>setGender(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="text" placeholder="Enter Age" value={age} onChange={(e)=>setAge(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="email" placeholder="Enter Email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="password" placeholder="Enter Password" value={password} onChange={(e)=>{
+                    setPassword(e.target.value)
+                    handlePass(password)
+                    } } />
+                    <Text m='auto'>{msg}</Text>
+                    <Input mt='2%' h={['30px','40px','60x','60px']} mb='4%' m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="password" placeholder="Confirm Password" value={confirm} onChange={(e)=>setConfirm(e.target.value)} />
+                    </Flex> 
+                <Box>
+                    <Button m='auto' mt='10px' w={['90%','90%','24%','24%']} onClick={handleClick}>Register</Button>
+                </Box>
+                   
+                </Box>
+                </Flex>
+                
+
+            
+            </Box>
+            
+            
+            
+            
+        </Box>
     )
 }
 
