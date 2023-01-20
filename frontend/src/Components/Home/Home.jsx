@@ -4,11 +4,30 @@ import img1 from "./Images/img1.png";
 import img2 from "./Images/img2.png";
 import img3 from "./Images/img3.png";
 import img4 from "./Images/img4.png";
+import img5 from "./Images/img5.png";
+import img6 from "./Images/img6.png";
+import img7 from "./Images/img7.png";
+import img8 from "./Images/img8.png";
+import img9 from "./Images/img9.png";
 import { allProducts } from "../../AllProducts";
-import { Link } from "react-router-dom";
+
 import "./Home.css";
 import { FaStar } from "react-icons/fa";
+import SimpleImageSlider from "react-simple-image-slider";
+const images = [
+  { url: img1 },
+  { url: img2},
+  { url: img3 },
+  { url:img4 },
 
+];
+const images1 = [
+  { url: img5 },
+  { url: img6},
+  { url: img7 },
+  { url:img8},
+
+];
 export default function Home() {
   let products = [...allProducts];
   products.sort(() => Math.random() - 0.5);
@@ -41,16 +60,32 @@ export default function Home() {
         <hr />
       </div>
       <div id="image-container">
-        <img src={img1} alt="" />
-        <img src={img2} alt="" />
-        <img src={img3} alt="" />
-        <img src={img4} alt="" />
+      <SimpleImageSlider
+        width={"90%"}
+        height={504}
+        images={images1}
+        showBullets={true}
+        showNavs={false}
+        autoPlay={true}
+      /> <br></br>
+
+        <img src={img9} alt="" />
+       <br></br>
       </div>
       <div id="h1-line2">
         <hr />
         <h1>Top Products for You!!!</h1>
         <hr />
       </div>
+      <SimpleImageSlider
+        width={"90%"}
+
+        height={504}
+        images={images}
+        showBullets={true}
+        showNavs={false}
+        autoPlay={true}
+      /><br></br>
       <section id="products">
         {products
           .slice(0, 80)
