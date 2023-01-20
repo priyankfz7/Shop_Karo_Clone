@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useState } from "react"
 import { Input,Button,Box,Text,Flex,Image } from '@chakra-ui/react'
-import logo from '../Components/Logo/mall_logo.png'
+import earn from '../Components/Logo/earn2.webp'
 
 
 
@@ -64,27 +64,29 @@ const Signup = () => {
     
 
     return (
-        <Box bgColor='purple.50'>
+        <Box >
             <Box>
-                <Flex direction={['column','column','row','row']}>
-                <Box>
-                    <Image m='auto' w={['70%','70%','30%','30%']} src={logo} alt="" />
+                <Flex gap='5%' direction={['column-reverse','column-reverse','row','row']}>
+                <Box m='auto' pt={['20px','20px','70px','70px']} w={['90%','90%','40%','40%']}>
+                    <Image m='auto' w={['70%','70%','30%','30%']} src={earn} alt="" />
+                    <Text mt='10px'>Want to be a seller to earn more with Shop Karo.....</Text>
+                    <Button mt='10px'>I wanna be a seller</Button>
                 </Box>
-                <Box>
+                <Box bgColor='purple.50' m='auto' pt={['20px','20px','40px','40px']} pb={['20px','20px','40px','40px']} w={['90%','90%','55%','55%']} >
                     <Flex direction='column'>
-                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="text" placeholder="Enter Full Name" value={name} onChange={(e)=>setName(e.target.value)} />
-                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="text" placeholder="Enter Gender" value={gender} onChange={(e)=>setGender(e.target.value)} />
-                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="text" placeholder="Enter Age" value={age} onChange={(e)=>setAge(e.target.value)} />
-                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="email" placeholder="Enter Email" value={email} onChange={(e)=>setEmail(e.target.value)} />
-                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="password" placeholder="Enter Password" value={password} onChange={(e)=>{
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','40%','40%']} variant='flushed' type="text" placeholder="Enter Full Name" value={name} onChange={(e)=>setName(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','40%','40%']} variant='flushed' type="text" placeholder="Enter Gender" value={gender} onChange={(e)=>setGender(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','40%','40%']} variant='flushed' type="text" placeholder="Enter Age" value={age} onChange={(e)=>setAge(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','40%','40%']} variant='flushed' type="email" placeholder="Enter Email" value={email} onChange={(e)=>setEmail(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} m='auto' w={['90%','90%','40%','40%']} variant='flushed' type="password" placeholder="Enter Password" value={password} onChange={(e)=>{
                     setPassword(e.target.value)
                     handlePass(password)
                     } } />
                     <Text m='auto'>{msg}</Text>
-                    <Input mt='2%' h={['30px','40px','60x','60px']} mb='4%' m='auto' w={['90%','90%','24%','24%']} variant='flushed' type="password" placeholder="Confirm Password" value={confirm} onChange={(e)=>setConfirm(e.target.value)} />
+                    <Input mt='2%' h={['30px','40px','60x','60px']} mb='4%' m='auto' w={['90%','90%','40%','40%']} variant='flushed' type="password" placeholder="Confirm Password" value={confirm} onChange={(e)=>setConfirm(e.target.value)} />
                     </Flex> 
-                <Box>
-                    <Button m='auto' mt='10px' w={['90%','90%','24%','24%']} onClick={handleClick}>Register</Button>
+                <Box >
+                    <Button m='auto' mt='10px' w={['90%','90%','40%','40%']} onClick={handleClick}>Register</Button>
                 </Box>
                    
                 </Box>
