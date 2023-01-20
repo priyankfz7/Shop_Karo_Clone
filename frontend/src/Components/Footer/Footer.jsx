@@ -229,7 +229,7 @@ export default function Footer() {
         <h6>Use Paytm Mall App for The Best Online Shopping Experience</h6>
         <p>
           Now you can shop for anything your heart desires from the comfort of
-          your home. Make sure to download the Meesho app to have a smooth and
+          your home. Make sure to download the Paytm Mall app to have a smooth and
           enjoyable shopping experience. You can even share products you like
           with your friends on social media in just seconds. If you're trying to
           save time and get the best deals, downloading the best app for
