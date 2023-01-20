@@ -74,7 +74,7 @@ export default function Footer() {
         <p>
           There are lots of reasons to shop online! It can be fun and
           convenient. And if you are looking for budget-friendly online
-          shopping, then you are at the right place. Meesho offers top-quality
+          shopping, then you are at the right place. Paytm Mall offers top-quality
           products at rock bottom prices, allowing you to shop to your heart’s
           content without any budget restraints.
         </p>
@@ -86,15 +86,15 @@ export default function Footer() {
           handpicked products that are the latest on the market. Whether you're
           looking for a new outfit, a gift for a special someone, or just some
           household items for everyday use, you will find everything you need at
-          the lowest prices on Meesho.
+          the lowest prices on Paytm Mall.
         </p>
         <h6>
           The Best Of Women's Fashion at Your Fingertips Western Wear for Women
         </h6>
         <p>
-          Shopping for Western wear for women at Meesho is always economical as
+          Shopping for Western wear for women at Paytm Mall is always economical as
           we only bring you the latest styles at wholesale prices. Affordability
-          without compromising on the style quotient is possible at Meesho where
+          without compromising on the style quotient is possible at Paytm Mall where
           you will find a huge range of casual, formal, and partywear dresses,
           <span> gowns</span>, <span>jeans</span>, <span>tops</span>,{" "}
           <span>T-shirts</span>, <span>skirts</span>, and more. You can buy all
@@ -119,7 +119,7 @@ export default function Footer() {
           getting dressed, it's good to always have some accessories, footwear,
           and <span>jewellery</span> that compliment your outfit. But you don't
           need to shell out too much money to get the latest designs anymore.
-          <br /> With Meesho, you can buy different types of accessories like
+          <br /> With Paytm Mall, you can buy different types of accessories like
           bags, watches, stoles, necklaces, earrings, bracelets, and more at
           affordable prices.
         </p>
@@ -203,7 +203,7 @@ export default function Footer() {
         <p>
           We know how crucial it is to give your home a makeover every once in a
           while. However, it is important to ensure that you're investing your
-          money in the right products. With Meesho, you'll find the best prices
+          money in the right products. With Paytm Mall, you'll find the best prices
           and the best selections, where we have home furnishing items like
           bedsheets, <span>curtains</span>, <span>blankets</span>, etc in every
           color you could possibly want and we're always making sure that you
@@ -213,7 +213,7 @@ export default function Footer() {
         <h6>Sports, Health &amp; Fitness</h6>
         <p>
           It is now more important than ever to keep your body fit and healthy.
-          So start your fitness journey with Meesho. Check out our selection of
+          So start your fitness journey with Paytm Mall. Check out our selection of
           fitness equipment available at wholesale prices. You will find
           everything from sportswear to yoga mats to exercise equipment for your
           home workouts like <span>dumbbell sets</span>, resistance bands, etc.{" "}
@@ -262,7 +262,7 @@ export default function Footer() {
           multiple payment options including debit and credit cards, UPI, and
           Cash on Delivery. If you're not happy with the quality of your
           product, send it back and get a full refund without any hassle. Want
-          to learn more? Feel free to send us an email at query@me.com. You
+          to learn more? Feel free to send us an email at paytmquery@me.com. You
           can also reach out to us on Facebook, Instagram, or Twitter. We're
           here to help you!
         </p>

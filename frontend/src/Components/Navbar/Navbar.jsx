@@ -97,11 +97,8 @@ export default function Navbar() {
           </Link>
           <Link to="/profile">
             <p id="profile-pic-modal">
-              <img
-                src="https://www.svgrepo.com/show/284856/profile-user.svg"
-                alt=""
-              />
-              <h2>Hello Rahul!</h2>
+             
+              <h2>Hello User</h2>
             </p>
           </Link>
           <h3>Categories</h3>
@@ -196,17 +193,7 @@ export default function Navbar() {
                 alt=""
               />
               Download App
-              <div>
-                <p>Download From</p>
-                <img
-                  src="https://images.meesho.com/images/pow/homepage/google-play-button.jpg"
-                  alt=""
-                />
-                <img
-                  src="https://images.meesho.com/images/pow/homepage/appstore-button.jpg"
-                  alt=""
-                />
-              </div>
+
             </p>
           </a>
           <p className="line">|</p>
@@ -226,12 +213,12 @@ export default function Navbar() {
               />
               Login/Sign Up
 
-              
+
             </p>
 
 
             <p id="cart">
-              <span>{count}</span>
+              <span></span>
               <svg
                 id="cart"
                 xmlns="http://www.w3.org/2000/svg"
