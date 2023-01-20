@@ -2,13 +2,17 @@
 
 const express=require("express")
 const {connection}=require("./config/db")
-const {SignupRoute}=require("./routes/Signup.routes")
+const {UserRoute}=require("./routes/User.routes")
+const {ProductRoutes}=require("./routes/product.routes")
+const {AdminRoute} =require("./routes/Admin.routes")
 const app=express()
  app.use(express.json())
 
 
 
-app.use("/signup",SignupRoute)
+app.use("/user",UserRoute)
+app.use("/admin",AdminRoute)
+app.use("/product",ProductRoutes)
 
 
 app.listen(4500,async()=>{

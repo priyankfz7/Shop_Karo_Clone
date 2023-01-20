@@ -1,14 +1,18 @@
 
 const {SignupModel}=require("../models/Signup.models")
 const express=require("express")
-const SignupRoute=express.Router()
+const UserRoute=express.Router()
 const bcrypt =require("bcrypt")
 const jwt=require("jsonwebtoken")
 require("dotenv").config()
 
 
-SignupRoute.post("/register",async (req,res)=>{
+UserRoute.post("/register",async (req,res)=>{
   const {email,password,name,gender}=req.body;
+  const email_present=await SignupModel.findOne({email})
+  if(email_present?.email){
+    res.send("Email Already Exist")
+  }else{
   try{
       bcrypt.hash(password, 5,async(err, secure_password)=>{
           // Store hash in your password DB.
@@ -26,9 +30,10 @@ SignupRoute.post("/register",async (req,res)=>{
       res.send("err while doing registration")
   res.send(err)
   }
+}
   })
   
-  SignupRoute.post("/login",async(req,res)=>{
+  UserRoute.post("/login",async(req,res)=>{
       const {email,password}=req.body;
       try{
           const user=await SignupModel.find({email});
@@ -63,5 +68,5 @@ SignupRoute.post("/register",async (req,res)=>{
     //  })
 
   module.exports={
-    SignupRoute
+    UserRoute
   }
