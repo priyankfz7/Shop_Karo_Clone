@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Nav, Aside } from "./Styled-Navbar";
 import { listItems, data } from "./data";
 import { allProducts } from "../../AllProducts";
-import { FaAlignJustify } from "react-icons/fa";
+
 
   import mall_logo from "./mall_logo.png";
 

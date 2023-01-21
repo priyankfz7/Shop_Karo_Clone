@@ -127,7 +127,7 @@ export default function Home() {
                     </span>{" "}
                     {reviews} Reviews
                   </p>
-                  <p className="meesho-trust">
+                  <p className="trust">
                     <svg
                       width="62"
                       height="24"
