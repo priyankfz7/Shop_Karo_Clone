@@ -1,5 +1,6 @@
 import {Input,Button,Box,Flex,Grid,GridItem,Text,Image} from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
+import {Link} from 'react-router-dom'
 
 const AdminProductPage = () => {
     const [name,setName] = useState('')
@@ -59,6 +60,7 @@ const AdminProductPage = () => {
                                 <Text>{e.productPrice}</Text>
                                 <Image width='100%' h='200px' src={e.productImage} alt="" />
                                 <br />
+                                <Button><Link to='/adminedit'>Edit</Link></Button>
                                 <Button onClick={()=>del(e.id)}>delete</Button>
                             </GridItem>
                         )

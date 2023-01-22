@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Input,Button,Box,Flex,Text,InputRightElement,InputGroup } from '@chakra-ui/react'
+import { Link } from "react-router-dom"
 
 const Login = () => {
 
@@ -81,7 +82,7 @@ const Login = () => {
                 <Button onClick={handleAdminClick}>Log in</Button>
                 <Box>
                     <Text>Don't have a Seller account? No worries</Text>
-                    <Button>Click here</Button>
+                    <Button><Link to='/adminsign'>Click here</Link></Button>
                 </Box>
             </Flex>
             

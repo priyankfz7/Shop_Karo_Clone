@@ -12,6 +12,7 @@ const AdminSignup = () => {
     const [confirm,setConfirm] = useState('')
     const [age,setAge] = useState('')
     const [msg,setMsg] = useState('')
+    const [col,setCol] = useState('')
 
     const payload = {
         name,email,gender,password,age
@@ -46,12 +47,16 @@ const AdminSignup = () => {
 
     const handlePass = (password) => {
         if(password.length<8){
+            setCol('tomato')
             setMsg('Password should be of 8 characters')
         } else if(!password.includes('1'||'2'||'3'||'4'||'5'||'6'||'7'||'8'||'9'||'0')){
+            setCol('tomato')
             setMsg('Please have a strong password (Password does not contain Numbers)')
         }else if(!password.includes('@'||'#'||'$'||'%'||'^'||'&'||'*'||'!')){
+            setCol('tomato')
             setMsg('Please have a strong password (Password does not contain special character)')
         }else{
+            setCol('green')
             setMsg("Password is strong")
         }
         
@@ -75,7 +80,7 @@ const AdminSignup = () => {
                     setPassword(e.target.value)
                     handlePass(password)
                     } } />
-                    <Text m='auto'>{msg}</Text>
+                    <Text m='auto' color={col}>{msg}</Text>
                     <Input mt='2%' h={['30px','40px','60x','60px']} mb='4%' m='auto' w={['90%','90%','40%','40%']} variant='flushed' type="password" placeholder="Confirm Password" value={confirm} onChange={(e)=>setConfirm(e.target.value)} />
                     </Flex> 
                 <Box >
