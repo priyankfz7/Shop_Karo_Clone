@@ -53,5 +53,4 @@ Paytm Mall strives hard to make your online shopping a more pleasant and cost-ef
 
 
 Login page
-![image]([https://user-images.githubusercontent.com/95843558/167846129-c8a671c8-ca6b-42c0-ac20-0bf380b19a79.png](https://github.com/priyankfz7/Shop_Karo_Clone/blob/master/frontend/src/images/Screenshot_20230123_123233.png?raw=true))
-
+![image](https://github.com/priyankfz7/Shop_Karo_Clone/blob/master/frontend/src/images/Screenshot_20230123_123233.png?raw=true)
